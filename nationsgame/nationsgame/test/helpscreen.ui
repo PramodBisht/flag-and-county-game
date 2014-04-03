@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpScreen</class>
+ <widget class="QWidget" name="HelpScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>751</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Nations</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="Widget" native="true">
+     <widget class="QPushButton" name="HelpButton">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>411</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Click here to get flags of the countries</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Back">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>340</y>
+        <width>411</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Back To Main Screen</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="plainTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>100</y>
+        <width>411</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="plainText">
+       <string>1. A set of random 20 questions will be selected from the database.
+2. For Every Correct answer there are 3 points and for an incorrect answer there is 1 mark. However there are no points for a PASS.
+3. This application is in its beta phase so there is no time limit.
+4. If you want to get a glimpse of the flags of the countries then press the above button
+5. To go back to the main screen press the button below</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Back</sender>
+   <signal>clicked()</signal>
+   <receiver>HelpScreen</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>470</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>375</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
